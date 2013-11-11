@@ -45,6 +45,7 @@ body {
 .frente .ditto {
     position: absolute;
     height: 50%;
+    bottom: 10px;
 
     animation:ditto 1s alternate;
 }
