@@ -1,0 +1,62 @@
+
+body {
+    background-image: url(../img/calle.jpg);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: cover;
+
+    animation: fondo 20s linear infinite;
+}
+
+@keyframes fondo {
+
+    from { background-position: 0px 0px;}
+    to { background-position: 1600px 0px;}
+}
+
+.frente {
+
+    position: absolute;
+    /*border: 5px solid red;*/
+    bottom: 10px;
+    left: 30%;
+    height: 50%;
+    z-index: 10;
+
+    animation:pikachu 1s alternate;
+}
+
+.frente img {
+    height: 100%
+
+}
+
+@keyframes pikachu{
+
+    from {bottom: 0px;}
+    to {bottom: 20px;}
+}
+
+@keyframes ditto{
+    from {bottom: 0px;}
+    to {bottom: 0px;}  
+}
+
+.frente .ditto {
+    position: absolute;
+    height: 50%;
+
+    animation:ditto 1s alternate;
+}
+
+.piso{
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: gray;
+}
+
+    
