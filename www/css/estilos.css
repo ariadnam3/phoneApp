@@ -38,8 +38,8 @@ body {
 }
 
 @keyframes ditto{
-    from {bottom: 0px;}
-    to {bottom: 0px;}  
+    from {bottom: 10px;}
+    to {bottom: 30px;}  
 }
 
 .frente .ditto {
@@ -47,7 +47,7 @@ body {
     height: 50%;
     bottom: 10px;
 
-    animation:ditto 1s alternate;
+    animation: ditto 0.5s alternate infinite linear;
 }
 
 .piso{
