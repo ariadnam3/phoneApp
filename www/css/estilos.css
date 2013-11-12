@@ -6,9 +6,16 @@ body {
     background-size: cover;
 
     animation: fondo 20s linear infinite;
+    -webkit-animation: fondo 20s linear infinite;
 }
 
 @keyframes fondo {
+
+    from { background-position: 0px 0px;}
+    to { background-position: 1600px 0px;}
+}
+
+@-webkit-keyframes fondo {
 
     from { background-position: 0px 0px;}
     to { background-position: 1600px 0px;}
@@ -24,6 +31,7 @@ body {
     z-index: 10;
 
     animation:pikachu 1s alternate;
+    -webkit-animation:pikachu 1s alternate;
 }
 
 .frente img {
@@ -37,17 +45,30 @@ body {
     to {bottom: 20px;}
 }
 
+@-webkit-keyframes pikachu{
+
+    from {bottom: 0px;}
+    to {bottom: 20px;}
+}
+
 @keyframes ditto{
     from {bottom: 10px;}
     to {bottom: 30px;}  
 }
 
+@-webkit-keyframes ditto{
+    from {bottom: 10px;}
+    to {bottom: 30px;}  
+}
+
 .frente .ditto {
-    position: absolute;
+    position: relative;
     height: 50%;
     bottom: 10px;
+    
 
     animation: ditto 0.5s alternate infinite linear;
+    -webkit-animation: ditto 0.5s alternate infinite linear;
 }
 
 .piso{
